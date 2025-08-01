@@ -1,181 +1,0 @@
-<!DOCTYPE html>
-
-<html dir="rtl" lang="fa">
-<head>
-<meta charset="utf-8"/>
-<title>TKA Radiator</title>
-<link href="style.css" rel="stylesheet"/>
-</head>
-<body>
-<header class="header">
-<nav class="navbar">
-<div class="nav-right">
-<a href="#home" id="nav-home">صفحه اصلی</a>
-<a href="#models" id="nav-models">مدل‌ها</a>
-<a href="#contact" id="nav-contact">تماس با ما</a>
-</div>
-<div class="nav-left">
-<label class="theme-switch">
-<input id="darkSwitch" type="checkbox"/>
-<span class="slider"></span>
-</label>
-<div class="language-switch">
-<span class="active" id="lang-fa">FA</span> | <span id="lang-en">EN</span>
-</div>
-</div>
-</nav>
-</header>
-<header class="hero">
-<div class="hero-text">
-<h1>TKA</h1>
-<p>رادیاتورهای لوکس</p>
-<p>مدرن و خاص</p>
-</div>
-<div class="hero-image">
-<img src="photo4.jpeg" alt="رادیاتور مدرن و خاص"/>
-</div>
-</header>
-<section class="products">
-<h2>دسته‌بندی محصولات</h2>
-<div class="product-grid">
-<div class="card" id="card-fantasy"><img src="photo2.jpeg" alt="رادیاتور فانتزی"/><p id="card-fantasy">فانتزی</p><button class="more-btn">مشاهده بیشتر</button></div>
-<div class="card" id="card-decorative"><img src="photo3.jpeg" alt="رادیاتور دکوراتیو"/><p id="card-decorative">دکوراتیو</p><button class="more-btn">مشاهده بیشتر</button></div>
-<div class="card" id="card-luxury"><img src="photo4.jpeg" alt="رادیاتور لوکس"/><p id="card-luxury">لوکس</p><button class="more-btn">مشاهده بیشتر</button></div>
-</div>
-</section>
-<section class="projects">
-<h2>نمونه‌کارها</h2>
-<div class="project-gallery">
-<div class="project">نمونه اول<button class="more-btn">مشاهده بیشتر</button></div>
-<div class="project">نمونه دوم<button class="more-btn">مشاهده بیشتر</button></div>
-<div class="project">نمونه سوم<button class="more-btn">مشاهده بیشتر</button></div>
-</div>
-</section>
-<section class="about">
-<h2>درباره ما</h2>
-<p>برند تکا رادیاتور فعالیت حرفه‌ای خود را از سال ۱۳۹۲ با تمرکز بر طراحی و تولید رادیاتورهای لوکس و دکوراتیو آغاز کرد. از همان ابتدا، هدف ما ترکیب گرما با زیبایی بوده است؛ تا رادیاتور دیگر صرفاً یک وسیله گرمایشی نباشد، بلکه به عنصری مهم در طراحی دکوراسیون داخلی تبدیل شود.</p>
-<p>با تکیه بر تجربه، نوآوری، و استفاده از متریال باکیفیت، توانسته‌ایم محصولاتی منحصر‌به‌فرد ارائه دهیم که هم از نظر عملکرد فنی و هم از نظر زیبایی‌شناسی، پاسخگوی سلیقه‌ی مشتریان خاص‌پسند باشد.</p>
-<p>امروز تکا رادیاتور با افتخار به‌عنوان یکی از برندهای پیشرو در زمینه رادیاتورهای دکوراتیو در ایران شناخته می‌شود و همواره در تلاش است تا استانداردهای جدیدی در طراحی و کیفیت ارائه دهد.</p>
-</section>
-<script>
-  const toggle = document.getElementById("darkModeToggle");
-  toggle.addEventListener("change", function() {
-    document.body.classList.toggle("dark-mode", toggle.checked);
-  });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.getElementById('darkSwitch');
-  const langFA = document.getElementById('lang-fa');
-  const langEN = document.getElementById('lang-en');
-
-  // Dark mode switch
-  toggle.addEventListener('change', function () {
-    document.body.classList.toggle('dark-mode', toggle.checked);
-  });
-
-  // Language switch
-  langFA.addEventListener('click', () => {
-    langFA.classList.add('active');
-    langEN.classList.remove('active');
-    document.body.setAttribute('lang', 'fa');
-    document.body.classList.remove('english');
-  });
-
-  langEN.addEventListener('click', () => {
-    langEN.classList.add('active');
-    langFA.classList.remove('active');
-    document.body.setAttribute('lang', 'en');
-    document.body.classList.add('english');
-  });
-});
-</script><script>
-const translations = {
-  fa: {
-    home: "صفحه اصلی",
-    models: "مدل‌ها",
-    contact: "تماس با ما",
-    fantasy: "فانتزی",
-    decorative: "دکوراتیو",
-    luxury: "لوکس"
-  },
-  en: {
-    home: "Home",
-    models: "Models",
-    contact: "Contact Us",
-    fantasy: "Fantasy",
-    decorative: "Decorative",
-    luxury: "Luxury"
-  }
-};
-
-function switchLanguage(lang) {
-  document.getElementById('nav-home').innerText = translations[lang].home;
-  document.getElementById('nav-models').innerText = translations[lang].models;
-  document.getElementById('nav-contact').innerText = translations[lang].contact;
-  document.getElementById('title-fantasy').innerText = translations[lang].fantasy;
-  document.getElementById('title-decorative').innerText = translations[lang].decorative;
-  document.getElementById('title-luxury').innerText = translations[lang].luxury;
-}
-document.getElementById('lang-fa').onclick = () => switchLanguage('fa');
-document.getElementById('lang-en').onclick = () => switchLanguage('en');
-
-document.getElementById('lang-fa').addEventListener('click', function () {
-  document.getElementById('about-fa').style.display = 'block';
-  document.getElementById('about-en').style.display = 'none';
-});
-document.getElementById('lang-en').addEventListener('click', function () {
-  document.getElementById('about-fa').style.display = 'none';
-  document.getElementById('about-en').style.display = 'block';
-});
-</script>
-<section class="about-section" id="about">
-<div id="about-fa">
-
-<p>
-      
-<script>
-  const darkSwitch = document.getElementById('darkSwitch');
-  const body = document.body;
-
-  // لود اولیه با توجه به ذخیره در localStorage
-  if (localStorage.getItem('dark-mode') === 'true') {
-    body.classList.add('dark-mode');
-    darkSwitch.checked = true;
-  }
-
-  darkSwitch.addEventListener('change', () => {
-    body.classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-  });
-</script>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const switcher = document.getElementById("darkSwitch");
-  const body = document.body;
-
-  // بارگزاری اولیه
-  if (localStorage.getItem("light-mode") === "true") {
-    body.classList.add("light-mode");
-    switcher.checked = true;
-  }
-
-  switcher.addEventListener("change", function() {
-    if (this.checked) {
-      body.classList.add("light-mode");
-      localStorage.setItem("light-mode", "true");
-    } else {
-      body.classList.remove("light-mode");
-      localStorage.setItem("light-mode", "false");
-    }
-  });
-});
-</script>
-
-<a href="tel:09123456789" class="call-button" title="تماس فوری">
-  📞
-</a>
-</body>
-</html>
