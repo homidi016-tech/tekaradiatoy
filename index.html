@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>TKA Radiator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav style="text-align:center; padding: 1em; background-color: #111; color: white;">
+    <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">صفحه اصلی</a>
+    <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">نمونه‌کارها</a>
+    <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">مدل‌ها</a>
+    <a href="#contact" style="margin: 0 15px; color: white; text-decoration: none;">تماس با ما</a>
+    <label style="margin-right: 20px;">
+        <input type="checkbox" id="darkModeToggle"> سوییچ روز/شب
+    </label>
+</nav>
+<script>
+document.getElementById('darkModeToggle').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});
+</script>
+<style>
+.dark-mode {
+    background-color: #111;
+    color: #f0f0f0;
+}
+</style>
+
+    <header class="hero">
+        <h1>TKA Radiator</h1>
+        <p>رادیاتورهای لوکس، مدرن و خاص</p>
+    </header>
+    <section class="gallery">
+        <img src="images/photo1.jpeg" alt="محصول ۱">
+        <img src="images/photo2.jpeg" alt="محصول ۲">
+        <img src="images/photo3.jpeg" alt="محصول ۳">
+        <img src="images/photo4.jpeg" alt="محصول ۴">
+    </section>
+    <footer>
+        <a href="#" class="btn">تماس با ما</a>
+    </footer>
+</body>
+</html>
