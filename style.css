@@ -348,3 +348,48 @@ body.light-mode .card p,
 body.light-mode .project {
   color: #222 !important;
 }
+
+
+
+/* فقط بک‌گراند اصلی روشن بشه */
+body.light-mode {
+  background-color: #fdfdfd !important;
+}
+
+/* سکشن‌ها هم روشن ولی ساده بمونن */
+body.light-mode .hero,
+body.light-mode .products,
+body.light-mode .projects,
+body.light-mode .about {
+  background-color: #ffffff !important;
+}
+
+/* منوی بالا تیره بمونه تا لینک‌ها دیده بشن */
+body.light-mode .navbar {
+  background-color: #111 !important;
+}
+
+/* رنگ نوشته‌ها ثابت بمونه ولی توی کارت‌ها قابل دید باشه */
+body.light-mode .card,
+body.light-mode .project {
+  background-color: #f9f9f9 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #111 !important;
+}
+
+/* متن داخل کارت قابل دید باشه */
+body.light-mode .card p,
+body.light-mode .project {
+  color: #111 !important;
+}
+
+/* رنگ طلایی تیترها ثابت بمونه */
+body.light-mode h2 {
+  color: gold !important;
+}
+
+/* جلوگیری از تغییر رنگ لینک منو */
+.navbar a {
+  color: white !important;
+  text-decoration: none;
+}
