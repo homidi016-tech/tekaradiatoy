@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>TKA Radiator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#">صفحه اصلی</a></li>
+    <li><a href="#">مدل‌ها</a></li>
+    <li><a href="#">تماس با ما</a></li>
+    <li><label class="switch"><input type="checkbox" id="darkModeToggle"><span class="slider round"></span></label></li>
+  </ul>
+</nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>TKA</h1>
+            <p>رادیاتورهای لوکس</p>
+            <p>مدرن و خاص</p>
+        </div>
+        <div class="hero-image">
+            <img src="photo4.jpeg" alt="Radiator">
+        </div>
+    </header>
+
+    <section class="products">
+        <h2>دسته‌بندی محصولات</h2>
+        <div class="product-grid">
+            <div class="card"><img src="photo2.jpeg"><p>فانتزی</p></div>
+            <div class="card"><img src="photo3.jpeg"><p>دکوراتیو</p></div>
+            <div class="card"><img src="photo4.jpeg"><p>لوکس</p></div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>نمونه‌کارها</h2>
+        <div class="project-gallery">
+            <div class="project">نمونه اول</div>
+            <div class="project">نمونه دوم</div>
+            <div class="project">نمونه سوم</div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>درباره ما</h2>
+        <p>توضیحاتی پیش‌فرض درباره برند TKA Radiator</p>
+    </section>
+
+<script>
+  const toggle = document.getElementById("darkModeToggle");
+  toggle.addEventListener("change", function() {
+    document.body.classList.toggle("dark-mode", toggle.checked);
+  });
+</script>
+
+</body>
+</html>
