@@ -1,0 +1,561 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0f0f11;
+    color: #fff;
+    direction: rtl;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #1a1a1d;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+.hero-text p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.hero-image img {
+    max-height: 300px;
+}
+
+.products, .projects, .about {
+    padding: 2rem;
+    background-color: #18181b;
+    margin: 2rem 0;
+}
+
+h2 {
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    background: #222;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 1rem;
+}
+.project {
+    flex: 1;
+    background: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Dark Mode Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input { display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Vazir', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+}
+
+/* HEADER STYLE */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+}
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-family: 'Vazir', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #FFD700;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-switch span {
+  cursor: pointer;
+  color: #aaa;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.language-switch span.active {
+  color: #fff;
+}
+
+.language-switch span:hover {
+  color: #FFD700;
+}
+
+/* SWITCH THEME */
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch .slider {
+  width: 40px;
+  height: 20px;
+  background-color: #555;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.theme-switch .slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  left: 1px;
+  top: 1px;
+  transition: transform 0.3s;
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.theme-switch input:checked + .slider {
+  background-color: #FFD700;
+}
+
+
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right, .nav-left {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  body {
+    font-size: 0.95rem !important;
+  }
+  .hero-text p {
+    font-size: 1rem !important;
+  }
+}
+
+
+
+body.light-mode {
+  background-color: #f2f2f2 !important;
+}
+
+body.light-mode .hero,
+body.light-mode .products,
+body.light-mode .projects,
+body.light-mode .about {
+  background-color: #fff !important;
+}
+
+body.light-mode .card,
+body.light-mode .project {
+  background-color: #e8e8e8 !important;
+}
+
+
+
+body.light-mode {
+  background-color: #f2f2f2 !important;
+}
+
+body.light-mode .hero,
+body.light-mode .products,
+body.light-mode .projects,
+body.light-mode .about,
+body.light-mode .navbar,
+body.light-mode .card,
+body.light-mode .project {
+  background-color: #ffffff !important;
+}
+
+
+
+/* لایت مود - فقط بک‌گراند و تنظیم رنگ کارت‌ها */
+body.light-mode {
+  background-color: #f2f2f2 !important;
+}
+
+body.light-mode .hero,
+body.light-mode .products,
+body.light-mode .projects,
+body.light-mode .about,
+body.light-mode .navbar {
+  background-color: #ffffff !important;
+}
+
+/* حفظ رنگ طلایی هدرها */
+body.light-mode h2 {
+  color: gold !important;
+}
+
+/* تنظیم کارت‌ها برای دید بهتر در لایت مود */
+body.light-mode .card,
+body.light-mode .project {
+  background-color: #ffffff !important;
+  color: #222 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+body.light-mode .card p,
+body.light-mode .project {
+  color: #222 !important;
+}
+
+
+
+/* فقط بک‌گراند اصلی روشن بشه */
+body.light-mode {
+  background-color: #fdfdfd !important;
+}
+
+/* سکشن‌ها هم روشن ولی ساده بمونن */
+body.light-mode .hero,
+body.light-mode .products,
+body.light-mode .projects,
+body.light-mode .about {
+  background-color: #ffffff !important;
+}
+
+/* منوی بالا تیره بمونه تا لینک‌ها دیده بشن */
+body.light-mode .navbar {
+  background-color: #111 !important;
+}
+
+/* رنگ نوشته‌ها ثابت بمونه ولی توی کارت‌ها قابل دید باشه */
+body.light-mode .card,
+body.light-mode .project {
+  background-color: #f9f9f9 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #111 !important;
+}
+
+/* متن داخل کارت قابل دید باشه */
+body.light-mode .card p,
+body.light-mode .project {
+  color: #111 !important;
+}
+
+/* رنگ طلایی تیترها ثابت بمونه */
+body.light-mode h2 {
+  color: gold !important;
+}
+
+/* جلوگیری از تغییر رنگ لینک منو */
+.navbar a {
+  color: white !important;
+  text-decoration: none;
+}
+
+
+
+.card, .project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* موبایل: روی لمس هم افکت بگیره */
+@media (hover: none) {
+  .card:active, .project:active {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  }
+}
+
+
+
+.card, .project {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+/* کادر طلایی متحرک */
+.card::before, .project::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 215, 0, 0.3),
+    rgba(255, 215, 0, 0.8),
+    rgba(255, 215, 0, 0.3)
+  );
+  animation: shine 3s linear infinite;
+  z-index: 0;
+}
+
+/* افکت نور گرادیان */
+.card::after, .project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* دکمه داخل کارت */
+.card .more-btn,
+.project .more-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: gold;
+  color: #000;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+/* Hover افکت نهایی */
+.card:hover,
+.project:hover {
+  transform: scale(1.05) rotateZ(1.5deg);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.card:hover::after,
+.project:hover::after {
+  opacity: 1;
+}
+
+.card:hover .more-btn,
+.project:hover .more-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* متن داخل کارت هنگام hover */
+.card:hover p,
+.project:hover p {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+/* انیمیشن کادر طلایی */
+@keyframes shine {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* کارت اصلی با padding برای نمایش قاب */
+.card, .project {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background-clip: padding-box;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* قاب طلایی متحرک */
+.card::before, .project::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: conic-gradient(from 0deg, gold, #ffcc00, gold);
+  border-radius: 12px;
+  animation: rotateBorder 3s linear infinite;
+  z-index: 0;
+}
+
+/* قاب داخلی کارت تا متن و عکس زرد نشه */
+.card::after, .project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* محتوا داخل کارت بالای همه بمونه */
+.card * , .project * {
+  position: relative;
+  z-index: 2;
+}
+
+/* انیمیشن چرخشی قاب */
+@keyframes rotateBorder {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
