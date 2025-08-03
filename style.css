@@ -1,0 +1,37 @@
+
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background-color: #fff;
+}
+
+.top-header {
+  background-color: #111;
+  color: white;
+  padding: 0rem 1rem; /* حذف کامل فاصله بالا و پایین */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  height: 120px; /* ست کردن ارتفاع ثابت مطابق با سایز لوگو */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  display: block;
+}
