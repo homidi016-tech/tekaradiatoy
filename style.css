@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  direction: rtl;
+}
+header {
+  background: #333;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.logo {
+  font-size: 20px;
+  text-align: center;
+}
+.logo span {
+  font-size: 12px;
+  display: block;
+}
+.hamburger, .search-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+}
+#sideMenu {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.4s ease;
+  padding: 10px;
+  z-index: 1000;
+}
+#sideMenu.open {
+  right: 0;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menuList {
+  list-style: none;
+  padding: 0;
+}
+#menuList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#searchBox input {
+  width: 100%;
+  padding: 5px;
+}

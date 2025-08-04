@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منو همبرگری</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-right">
+      <button class="search-btn" onclick="openMenu('search')">&#128269;</button>
+    </div>
+    <div class="logo">TKA<br><span>RADIATOR</span></div>
+    <div class="header-left">
+      <button class="hamburger" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="sideMenu">
+    <div class="menu-header">
+      <button onclick="closeMenu()">&#8592;</button>
+      <span id="menuTitle">منو</span>
+    </div>
+    <ul id="menuList">
+      <li id="searchBox"><input type="text" placeholder="جستجوی محصولات" /></li>
+      <li>محصولات</li>
+      <li>پروژه‌ها</li>
+      <li>مقالات</li>
+      <li>درباره ما</li>
+      <li>تماس با ما</li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
