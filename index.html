@@ -1,126 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>تکا رادیاتور — رادیاتور و حوله‌خشک‌کن استیل 304</title>
-  <meta name="description" content="لندینگ رسمی تکا رادیاتور | رادیاتور و حوله‌خشک‌کن از استیل ضدزنگ 304 با طراحی لوکس.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نام برند شما | معرفی محصول</title>
+  <meta name="description" content="سایت رسمی برند — معرفی محصول، مزایا، گالری، و راه‌های تماس.">
+  <meta property="og:title" content="نام برند شما">
+  <meta property="og:description" content="معرفی سریع و شیک محصول شما.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">پرش به محتوا</a>
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#top">
-        <img src="assets/logo.svg" alt="لوگوی تکا رادیاتور" width="28" height="28">
-        <span>تکا رادیاتور</span>
+    <div class="container nav">
+      <a class="brand" href="#hero">
+        <img src="assets/logo.svg" alt="لوگو" width="32" height="32">
+        <span>نام برند</span>
       </a>
-      <nav class="nav" id="nav">
-        <a href="#features">مزایا</a>
-        <a href="#products">محصولات</a>
-        <a href="#faq">سوالات</a>
-        <a href="#contact" class="btn btn-primary sm">تماس</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="باز/بسته منو" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">باز/بسته کردن منوی اصلی</span>
+        ☰
       </button>
-      <button class="mode-toggle" id="modeToggle" aria-label="تغییر تم" title="تیره/روشن">◐</button>
+      <nav id="siteNav" class="site-nav">
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#gallery">گالری</a>
+        <a href="#pricing">قیمت</a>
+        <a href="#contact">تماس</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">🌙</button>
+      </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1>گرمای لوکس با استیل ضدزنگ ۳۰۴</h1>
-          <p>رادیاتور و حوله‌خشک‌کن از <b>استیل 304</b>؛ مقاوم در برابر خوردگی، مناسب فضاهای مرطوب و سازگار با دکوراسیون مدرن.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary lg" href="#products">مشاهده محصولات</a>
-            <a class="btn btn-ghost lg" href="#contact">دریافت پیش‌فاکتور</a>
+          <h1>برند شما، <span class="accent">حس حرفه‌ای</span> در یک نگاه</h1>
+          <p>اینجا با یک سایت سبک و شیک، محصولتان را واضح و متفاوت معرفی می‌کنید. سئو استاندارد، طراحی واکنش‌گرا و پشتیبانی از حالت تیره/روشن.</p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn primary">سفارش / خرید</a>
+            <a href="#features" class="btn ghost">مشاهده مزایا</a>
           </div>
+          <ul class="trust-badges">
+            <li>ارسال سریع</li>
+            <li>گارانتی بازگشت</li>
+            <li>پشتیبانی واتساپ</li>
+          </ul>
         </div>
         <div class="hero-media">
-          <img src="assets/product-1.jpg" alt="نمونه محصول استیل 304" class="hero-image">
+          <img src="assets/hero-product.jpg" alt="تصویر محصول" loading="eager">
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="features">
+    <section id="features" class="section">
       <div class="container">
-        <h2>مزایا</h2>
-        <div class="feature-grid">
-          <div class="card"><h3>استیل 304</h3><p>دوام بالا و مقاومت در برابر رطوبت.</p></div>
-          <div class="card"><h3>فینیش لوکس</h3><p>برس‌خورده، آینه‌ای و PVD مشکی.</p></div>
-          <div class="card"><h3>نصب آسان</h3><p>اتصالات 1/2 اینچ، راهنمای نصب.</p></div>
-          <div class="card"><h3>گارانتی</h3><p>۵ سال عدم نشتی (نصب صحیح).</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="products">
-      <div class="container">
-        <h2>محصولات</h2>
-        <div class="product-grid">
-          <article class="product card">
-            <img src="assets/product-1.jpg" alt="رادیاتور پنلی 304">
-            <h3>رادیاتور پنلی 304</h3>
-            <p>ظاهر مینیمال با انتقال حرارت بالا.</p>
+        <h2>چرا <span class="accent">ما</span>؟</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>کیفیت ممتاز</h3>
+            <p>مواد اولیه درجه‌یک و کنترل کیفیت دقیق برای دوام و کارایی بالا.</p>
           </article>
-          <article class="product card">
-            <img src="assets/product-2.jpg" alt="حوله‌خشک‌کن نردبانی 304">
-            <h3>حوله‌خشک‌کن نردبانی 304</h3>
-            <p>گزینه محبوب حمام‌های مدرن.</p>
+          <article class="card">
+            <h3>طراحی مینیمال</h3>
+            <p>ساده، مدرن و چشم‌نواز — تمرکز روی ارزش واقعی محصول.</p>
           </article>
-          <article class="product card">
-            <img src="assets/product-3.jpg" alt="حوله‌خشک‌کن برقی 304">
-            <h3>حوله‌خشک‌کن برقی 304</h3>
-            <p>مستقل از سیستم مرکزی با ترموستات.</p>
+          <article class="card">
+            <h3>قیمت منصفانه</h3>
+            <p>بهترین نسبت کیفیت به قیمت؛ بدون هزینه‌های پنهان.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="faq">
+    <section id="gallery" class="section alt">
       <div class="container">
-        <h2>سوالات متداول</h2>
-        <details class="accordion">
-          <summary>گارانتی شامل چه مواردی می‌شود؟</summary>
-          <p>نشتی و عیوب متریال/فینیش در شرایط نصب صحیح تا ۵ سال تحت پوشش است.</p>
-        </details>
-        <details class="accordion">
-          <summary>خرید عمده برای پروژه ممکن است؟</summary>
-          <p>بله؛ با واحد فروش تماس بگیرید تا لیست قیمت پروژه و زمان‌بندی تحویل اعلام شود.</p>
-        </details>
-        <details class="accordion">
-          <summary>چگونه تمیز کنم؟</summary>
-          <p>پاک‌کننده pH-خنثی و دستمال نرم؛ از مواد کلردار قوی و اسکاچ زبر اجتناب کنید.</p>
-        </details>
+        <h2>گالری محصول</h2>
+        <div class="gallery">
+          <figure><img src="assets/product1.jpg" alt="محصول — نمای ۱"><figcaption>نمای نزدیک</figcaption></figure>
+          <figure><img src="assets/product2.jpg" alt="محصول — نمای ۲"><figcaption>کاربرد واقعی</figcaption></figure>
+          <figure><img src="assets/product3.jpg" alt="محصول — نمای ۳"><figcaption>جزئیات ساخت</figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container cols-2">
-        <div>
-          <h2>سفارش و مشاوره</h2>
-          <p>برای استعلام قیمت و انتخاب مدل مناسب پیام بدهید.</p>
-          <a class="btn btn-primary lg" href="mailto:tkaradiatorofficiall">ایمیل به فروش</a>
+    <section class="section">
+      <div class="container testimonials">
+        <h2>نظرات مشتریان</h2>
+        <blockquote>
+          <p>«به‌جرئت می‌گم بهترین خرید امسالم بود. کیفیت و طراحی عالی!»</p>
+          <footer>— م. احمدی</footer>
+        </blockquote>
+        <blockquote>
+          <p>«تحویل سریع و بسته‌بندی عالی. دوباره می‌خرم.»</p>
+          <footer>— س. رحیمی</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container pricing">
+        <h2>پلن‌ها و قیمت</h2>
+        <div class="cards pricing-cards">
+          <article class="card price">
+            <h3>استاندارد</h3>
+            <p class="price-tag"><span class="num">2,490,000</span><span class="unit">تومان</span></p>
+            <ul>
+              <li>گارانتی ۱۲ ماهه</li>
+              <li>ارسال ۳ تا ۵ روز</li>
+              <li>پشتیبانی چت</li>
+            </ul>
+            <a href="#contact" class="btn primary">سفارش</a>
+          </article>
+          <article class="card price highlight">
+            <h3>حرفه‌ای</h3>
+            <p class="price-tag"><span class="num">3,990,000</span><span class="unit">تومان</span></p>
+            <ul>
+              <li>گارانتی ۱۸ ماهه</li>
+              <li>ارسال ۴۸ ساعته</li>
+              <li>پشتیبانی ویژه</li>
+            </ul>
+            <a href="#contact" class="btn primary">سفارش</a>
+          </article>
+          <article class="card price">
+            <h3>سفارشی</h3>
+            <p class="price-tag"><span class="num">تماس بگیرید</span></p>
+            <ul>
+              <li>لوگو/بسته‌بندی اختصاصی</li>
+              <li>رنگ‌بندی دلخواه</li>
+              <li>برندینگ کامل</li>
+            </ul>
+            <a href="#contact" class="btn ghost">مشاوره</a>
+          </article>
         </div>
-        <form class="card form" action="https://formspree.io/f/your-id" method="POST">
-          <label>نام
-            <input type="text" name="name" placeholder="نام شما" required>
-          </label>
-          <label>ایمیل
-            <input type="email" name="email" placeholder="you@example.com" required>
-          </label>
-          <label>پیام
-            <textarea name="message" rows="4" placeholder="سلام! لطفا لیست قیمت و کاتالوگ 304 را ارسال کنید."></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">ارسال</button>
-          <p class="form-note">* برای فعال شدن فرم، شناسه Formspree خود را جایگزین کنید.</p>
-        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <h2>ارتباط با ما</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>نام
+              <input type="text" name="name" required placeholder="نام شما">
+            </label>
+            <label>شماره تماس (اختیاری)
+              <input type="tel" name="phone" inputmode="tel" placeholder="مثلاً 09xx...">
+            </label>
+            <label>پیام
+              <textarea name="message" required rows="4" placeholder="چی در ذهن‌تونه؟"></textarea>
+            </label>
+            <button type="submit" class="btn primary">ارسال پیام</button>
+            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-info">
+            <ul>
+              <li>واتساپ: <a href="https://wa.me/989000000000" target="_blank" rel="noopener">+98 900 000 0000</a></li>
+              <li>اینستاگرام: <a href="https://instagram.com/yourbrand" target="_blank" rel="noopener">@yourbrand</a></li>
+              <li>ایمیل: <a href="mailto:hello@yourbrand.com">hello@yourbrand.com</a></li>
+            </ul>
+            <p class="microcopy">با کلیک روی دکمه ارسال، با شرایط استفاده و سیاست حفظ‌حریم موافقید.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -128,17 +175,18 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="brand-col">
-        <a class="brand" href="#top">
-          <img src="assets/logo.svg" alt="لوگوی تکا رادیاتور" width="24" height="24">
-          <span>تکا رادیاتور</span>
+        <a class="brand" href="#hero">
+          <img src="assets/logo.svg" alt="لوگو" width="28" height="28">
+          <span>نام برند</span>
         </a>
-        <p class="muted">© <span id="year"></span> کلیه حقوق محفوظ است.</p>
+        <p>© <span id="year"></span> همه حقوق محفوظ است.</p>
       </div>
-      <div class="links-col">
-        <a href="https://www.instagram.com/tekaradiator" target="_blank" rel="noopener">اینستاگرام</a>
-        <a href="https://t.me/tkaradiatorofficiall" target="_blank" rel="noopener">تلگرام</a>
-        <a href="mailto:tkaradiatorofficiall">ایمیل</a>
-      </div>
+      <nav class="footer-nav">
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#gallery">گالری</a>
+        <a href="#pricing">قیمت</a>
+        <a href="#contact">تماس</a>
+      </nav>
     </div>
   </footer>
 
