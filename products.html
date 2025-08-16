@@ -8,41 +8,22 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html">
-        <img src="logo.svg" alt="لوگو" width="28" height="28">
-        <span>تکا رادیاتور</span>
-      </a>
-      <nav class="nav" id="nav">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="لوگو" width="24" height="24"><span>تکا رادیاتور</span></a>
+      <nav class="nav">
         <a href="index.html">صفحه اصلی</a>
-        <a href="products.html" class="btn btn-primary sm">محصولات</a>
-        <a href="index.html#faq">سوالات</a>
+        <a href="#top" class="btn btn-primary sm">محصولات</a>
         <a href="index.html#contact">ارتباط</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="باز/بسته منو" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <button class="mode-toggle" id="modeToggle" aria-label="تغییر تم"></button>
     </div>
   </header>
 
-  <main class="section">
-  <section class="section">
-    <div class="container">
-      <h2>گالری محصولات</h2>
-      <div class="product-grid">
-        <figure class="card"><img src="hero-sample-gold.jpeg" alt="نمونه نصب لوکس" style="width:100%;border-radius:10px"><figcaption class="muted">نمونه نصب — فینیش طلایی</figcaption></figure>
-        <figure class="card"><img src="prod-panel.svg" alt="رادیاتور پنلی"><figcaption class="muted">رادیاتور پنلی</figcaption></figure>
-        <figure class="card"><img src="prod-ladder.svg" alt="حوله‌خشک‌کن نردبانی"><figcaption class="muted">حوله‌خشک‌کن نردبانی</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
+  <main class="section" id="top">
     <div class="container">
       <h1>محصولات استیل ۳۰۴</h1>
       <p class="muted">تمامی محصولات از استیل ضدزنگ 304 ساخته می‌شوند؛ مناسب فضاهای مرطوب و با فینیش‌های برس‌خورده، آینه‌ای و PVD مشکی.</p>
@@ -96,19 +77,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="brand-col">
-        <a class="brand" href="index.html">
-          <img src="logo.svg" alt="لوگو" width="24" height="24">
-          <span>تکا رادیاتور</span>
-        </a>
+        <a class="brand" href="index.html"><img src="logo.svg" alt="لوگو" width="24" height="24"><span>تکا رادیاتور</span></a>
         <p class="muted">© <span id="year"></span> کلیه حقوق محفوظ است.</p>
       </div>
       <div class="links-col">
         <a href="https://www.instagram.com/tekaradiator" target="_blank" rel="noopener">اینستاگرام</a>
         <a href="https://t.me/tkaradiatorofficiall" target="_blank" rel="noopener">تلگرام</a>
+        <a href="mailto:tkaradiatorofficiall">ایمیل</a>
       </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
