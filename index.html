@@ -1,194 +1,120 @@
+
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>نام برند شما | معرفی محصول</title>
-  <meta name="description" content="سایت رسمی برند — معرفی محصول، مزایا، گالری، و راه‌های تماس.">
-  <meta property="og:title" content="نام برند شما">
-  <meta property="og:description" content="معرفی سریع و شیک محصول شما.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-cover.jpg">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ویو شاپ | خدمات مجازی تلگرام و فروش محصولات دیجیتال</title>
+  <meta name="description" content="ویو شاپ | خدمات رشد تلگرام، ممبر، ویو پست، تبلیغات هدفمند و ساخت ربات. ساده، شیک، قابل اعتماد.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <a class="skip-link" href="#main">پرش به محتوا</a>
   <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#hero">
-        <img src="assets/logo.svg" alt="لوگو" width="32" height="32">
-        <span>نام برند</span>
+    <div class="container header-wrap">
+      <a class="brand" href="#">
+        <img src="logo.svg" alt="View Shop Logo">
+        <span class="brand-text">ویو شاپ</span>
       </a>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">
-        <span class="sr-only">باز/بسته کردن منوی اصلی</span>
-        ☰
-      </button>
-      <nav id="siteNav" class="site-nav">
-        <a href="#features">ویژگی‌ها</a>
-        <a href="#gallery">گالری</a>
-        <a href="#pricing">قیمت</a>
-        <a href="#contact">تماس</a>
-        <button id="themeToggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">🌙</button>
+      <nav class="nav">
+        <a href="#services">خدمات</a>
+        <a href="#products">محصولات</a>
+        <a href="#faq">سوالات متداول</a>
+        <a href="#contact" class="btn btn-primary">ارتباط</a>
       </nav>
+      <button id="themeToggle" aria-label="تغییر تم">🌓</button>
     </div>
   </header>
 
-  <main id="main">
-    <section id="hero" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>برند شما، <span class="accent">حس حرفه‌ای</span> در یک نگاه</h1>
-          <p>اینجا با یک سایت سبک و شیک، محصولتان را واضح و متفاوت معرفی می‌کنید. سئو استاندارد، طراحی واکنش‌گرا و پشتیبانی از حالت تیره/روشن.</p>
-          <div class="hero-cta">
-            <a href="#pricing" class="btn primary">سفارش / خرید</a>
-            <a href="#features" class="btn ghost">مشاهده مزایا</a>
-          </div>
-          <ul class="trust-badges">
-            <li>ارسال سریع</li>
-            <li>گارانتی بازگشت</li>
-            <li>پشتیبانی واتساپ</li>
-          </ul>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>رشد سریع و امن در تلگرام با <span class="grad">ویو شاپ</span></h1>
+        <p>ساده، شیک و حرفه‌ای — ممبر واقعی، ویو پست، تبلیغات هدفمند و ربات اختصاصی. همین امروز رشدت رو شروع کن.</p>
+        <div class="cta">
+          <a href="#products" class="btn btn-primary">مشاهده پکیج‌ها</a>
+          <a id="tgLinkHero" class="btn btn-ghost" href="#" target="_blank" rel="noopener">سفارش از تلگرام</a>
         </div>
-        <div class="hero-media">
-          <img src="assets/hero-product.jpg" alt="تصویر محصول" loading="eager">
-        </div>
+        <ul class="hero-bullets">
+          <li>تحویل سریع و پشتیبانی واقعی</li>
+          <li>گارانتی کیفیت و گزارش شفاف</li>
+          <li>بدون نیاز به لاگین اکانت</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="features" class="section">
-      <div class="container">
-        <h2>چرا <span class="accent">ما</span>؟</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>کیفیت ممتاز</h3>
-            <p>مواد اولیه درجه‌یک و کنترل کیفیت دقیق برای دوام و کارایی بالا.</p>
-          </article>
-          <article class="card">
-            <h3>طراحی مینیمال</h3>
-            <p>ساده، مدرن و چشم‌نواز — تمرکز روی ارزش واقعی محصول.</p>
-          </article>
-          <article class="card">
-            <h3>قیمت منصفانه</h3>
-            <p>بهترین نسبت کیفیت به قیمت؛ بدون هزینه‌های پنهان.</p>
-          </article>
+      <div class="hero-media">
+        <div class="card stat">
+          <div class="stat-num">+12K</div>
+          <div class="stat-label">سفارش موفق</div>
+        </div>
+        <div class="card stat">
+          <div class="stat-num">4.9★</div>
+          <div class="stat-label">میانگین رضایت</div>
         </div>
       </div>
-    </section>
-
-    <section id="gallery" class="section alt">
-      <div class="container">
-        <h2>گالری محصول</h2>
-        <div class="gallery">
-          <figure><img src="assets/product1.jpg" alt="محصول — نمای ۱"><figcaption>نمای نزدیک</figcaption></figure>
-          <figure><img src="assets/product2.jpg" alt="محصول — نمای ۲"><figcaption>کاربرد واقعی</figcaption></figure>
-          <figure><img src="assets/product3.jpg" alt="محصول — نمای ۳"><figcaption>جزئیات ساخت</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container testimonials">
-        <h2>نظرات مشتریان</h2>
-        <blockquote>
-          <p>«به‌جرئت می‌گم بهترین خرید امسالم بود. کیفیت و طراحی عالی!»</p>
-          <footer>— م. احمدی</footer>
-        </blockquote>
-        <blockquote>
-          <p>«تحویل سریع و بسته‌بندی عالی. دوباره می‌خرم.»</p>
-          <footer>— س. رحیمی</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="pricing" class="section">
-      <div class="container pricing">
-        <h2>پلن‌ها و قیمت</h2>
-        <div class="cards pricing-cards">
-          <article class="card price">
-            <h3>استاندارد</h3>
-            <p class="price-tag"><span class="num">2,490,000</span><span class="unit">تومان</span></p>
-            <ul>
-              <li>گارانتی ۱۲ ماهه</li>
-              <li>ارسال ۳ تا ۵ روز</li>
-              <li>پشتیبانی چت</li>
-            </ul>
-            <a href="#contact" class="btn primary">سفارش</a>
-          </article>
-          <article class="card price highlight">
-            <h3>حرفه‌ای</h3>
-            <p class="price-tag"><span class="num">3,990,000</span><span class="unit">تومان</span></p>
-            <ul>
-              <li>گارانتی ۱۸ ماهه</li>
-              <li>ارسال ۴۸ ساعته</li>
-              <li>پشتیبانی ویژه</li>
-            </ul>
-            <a href="#contact" class="btn primary">سفارش</a>
-          </article>
-          <article class="card price">
-            <h3>سفارشی</h3>
-            <p class="price-tag"><span class="num">تماس بگیرید</span></p>
-            <ul>
-              <li>لوگو/بسته‌بندی اختصاصی</li>
-              <li>رنگ‌بندی دلخواه</li>
-              <li>برندینگ کامل</li>
-            </ul>
-            <a href="#contact" class="btn ghost">مشاوره</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="container contact">
-        <h2>ارتباط با ما</h2>
-        <div class="contact-grid">
-          <form id="contactForm" class="contact-form" novalidate>
-            <label>نام
-              <input type="text" name="name" required placeholder="نام شما">
-            </label>
-            <label>شماره تماس (اختیاری)
-              <input type="tel" name="phone" inputmode="tel" placeholder="مثلاً 09xx...">
-            </label>
-            <label>پیام
-              <textarea name="message" required rows="4" placeholder="چی در ذهن‌تونه؟"></textarea>
-            </label>
-            <button type="submit" class="btn primary">ارسال پیام</button>
-            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-          </form>
-          <div class="contact-info">
-            <ul>
-              <li>واتساپ: <a href="https://wa.me/989000000000" target="_blank" rel="noopener">+98 900 000 0000</a></li>
-              <li>اینستاگرام: <a href="https://instagram.com/yourbrand" target="_blank" rel="noopener">@yourbrand</a></li>
-              <li>ایمیل: <a href="mailto:hello@yourbrand.com">hello@yourbrand.com</a></li>
-            </ul>
-            <p class="microcopy">با کلیک روی دکمه ارسال، با شرایط استفاده و سیاست حفظ‌حریم موافقید.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="brand-col">
-        <a class="brand" href="#hero">
-          <img src="assets/logo.svg" alt="لوگو" width="28" height="28">
-          <span>نام برند</span>
-        </a>
-        <p>© <span id="year"></span> همه حقوق محفوظ است.</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="#features">ویژگی‌ها</a>
-        <a href="#gallery">گالری</a>
-        <a href="#pricing">قیمت</a>
-        <a href="#contact">تماس</a>
-      </nav>
     </div>
-  </footer>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>خدمات محبوب</h2>
+      <div class="grid-3">
+        <div class="card service">
+          <h3>ممبر واقعی</h3>
+          <p>افزایش اعضا با کیفیت و ریزش کنترل‌شده. شروع سریع.</p>
+        </div>
+        <div class="card service">
+          <h3>ویو پست</h3>
+          <p>افزایش بازدید پست‌ها با الگوی طبیعی و امن.</p>
+        </div>
+        <div class="card service">
+          <h3>تبلیغات هدفمند</h3>
+          <p>انتشار در کانال‌های مرتبط با گزارش‌دهی شفاف.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2>پکیج‌ها و محصولات</h2>
+      <div id="productGrid" class="grid-3"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>سوالات متداول</h2>
+      <div class="accordion">
+        <details>
+          <summary>آیا برای ثبت سفارش نیاز به رمز اکانت هست؟</summary>
+          <p>خیر. هرگز رمز عبور دریافت نمی‌کنیم. فقط لینک پست/کانال کافیست.</p>
+        </details>
+        <details>
+          <summary>مدت زمان انجام سفارش چقدر است؟</summary>
+          <p>بسته به نوع سرویس بین ۱ تا ۴۸ ساعت. سفارش‌های اکسپرس سریع‌تر انجام می‌شود.</p>
+        </details>
+        <details>
+          <summary>گارانتی ریزش چگونه اعمال می‌شود؟</summary>
+          <p>در صورت ریزش غیرعادی تا مدت مشخص، به صورت رایگان جبران می‌کنیم.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact">
+      <h2>ارتباط و پشتیبانی</h2>
+      <p>برای ثبت سفارش سریع یا دریافت مشاوره رایگان با ما در تلگرام در تماس باشید.</p>
+      <div class="contact-actions">
+        <a id="tgLinkFooter" class="btn btn-primary" href="#" target="_blank" rel="noopener">چت در تلگرام</a>
+        <a id="waLinkFooter" class="btn btn-ghost" href="#" target="_blank" rel="noopener">پیام در واتس‌اپ</a>
+        <a id="callLinkFooter" class="btn btn-ghost" href="#">تماس تلفنی</a>
+      </div>
+      <small class="muted">© <span id="year"></span> ویو شاپ — تمامی حقوق محفوظ است.</small>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
